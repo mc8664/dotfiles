@@ -33,3 +33,4 @@ autocmd BufEnter *.php call Phpmode()
 autocmd BufEnter *.js call Phpmode()
 autocmd BufEnter *.html call Phpmode()
 autocmd BufEnter *.css call Phpmode()
+colorscheme torte

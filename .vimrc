@@ -1,3 +1,19 @@
+"{} for movement
+"diw/daw
+"ze spelling suggestions
+"<n> zF for folds
+"z= spelling suggestions 
+"zf<move> for folding>
+"za open fold 
+"zc close fold
+"() and {} with di() and di () also da() ....
+"'' where you were a second ago
+". the last thing you did
+"R replace mode
+"^n for completion
+"Hex sex and Lex
+"% for moving back and forth between () {} []
+
 syntax on
 set nocompatible
 set ts=4
@@ -12,6 +28,8 @@ map <leader>e : Explore <LF>
 map <leader>s : vsplit new <LF>
 map <leader>S : split new <LF>
 map <leader>t : tabe <LF>
+map <leader>l : set list! <LF>
+map <leader>SS : set spell! <LF>
 
 
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.

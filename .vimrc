@@ -47,8 +47,17 @@ function Phpmode()
     set tabstop=8 softtabstop=0 expandtab  shiftwidth=4  smarttab
 endfunction
 
+function Yamlmode()
+    filetype plugin indent on
+    set tabstop=8 softtabstop=0 expandtab  shiftwidth=2  smarttab
+endfunction
+
 autocmd BufEnter *.php call Phpmode()
 autocmd BufEnter *.js call Phpmode()
 autocmd BufEnter *.html call Phpmode()
 autocmd BufEnter *.css call Phpmode()
+
+autocmd BufEnter *.yaml call Yamlmode()
+autocmd BufEnter *.yml call Yamlmode()
+
 colorscheme torte

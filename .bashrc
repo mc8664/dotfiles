@@ -29,7 +29,15 @@ function rdpport {
 	read -p "rdp hostname:" rdpaddress
 	read -p "rdp port:" rdpport
 	xfreerdp /u:"$rdpuser" /v:"$rdpaddress":$rdpport
+}
 
+function mimequery {
+	xdg-mime query filetype $1 2> /dev/null  || echo Usage: mimequery filename.
+}
+
+function mimesettype {
+	xdg-mime default $1.desktop $2 2> /dev/null  || printf "Usage: setmime program mimetype.\nSee mimequery.\n"
+	echo xdg-mime default $1.desktop $2 2> /dev/null  || printf "Usage: setmime program mimetype.\nSee mimequery.\n"
 }
 
 alias vm='virt-manager -c qemu:///system'
